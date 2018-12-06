@@ -5,7 +5,7 @@
 // s      (set)    - Sets value to 1
 // r      (reset)  - Resets latch to 0
 //
-module srlatch(q, s, r);
+module SRlatch(q, s, r);
 
     parameter 
         width = 8,
@@ -24,4 +24,4 @@ module srlatch(q, s, r);
     nor     [(width - 1):0] up(q, r, d);
     nor     [(width - 1):0] down(d, in, q);
 
-endmodule // srlatch
+endmodule // SRlatch
