@@ -6,7 +6,6 @@ module main_test
     reg reset = 1;
     reg[4:0] base, ending;
 
-
     wire in, out;
 
     srlatch register(output, input);
