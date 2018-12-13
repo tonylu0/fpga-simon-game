@@ -1,0 +1,141 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec 13 15:54:20 2018
+| Host         : DESKTOP-UEMN6MT running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_module_methodology_drc_routed.rpt -pb top_module_methodology_drc_routed.pb -rpx top_module_methodology_drc_routed.rpx
+| Design       : top_module
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 21
++-----------+----------+------------------------------------------------+------------+
+| Rule      | Severity | Description                                    | Violations |
++-----------+----------+------------------------------------------------+------------+
+| TIMING-6  | Warning  | No common primary clock between related clocks | 2          |
+| TIMING-23 | Warning  | Combinational loop found                       | 19         |
++-----------+----------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out_clk_wiz and clk_out_clk_wiz_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out_clk_wiz] -to [get_clocks clk_out_clk_wiz_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out_clk_wiz_1 and clk_out_clk_wiz are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out_clk_wiz_1] -to [get_clocks clk_out_clk_wiz]
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[0]_inst_i_2/I2 and divide/led_OBUF[0]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[1]_inst_i_2/I2 and divide/led_OBUF[1]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[2]_inst_i_2/I2 and divide/led_OBUF[2]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[3]_inst_i_2/I2 and divide/led_OBUF[3]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[4]_inst_i_2/I2 and divide/led_OBUF[4]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[5]_inst_i_2/I2 and divide/led_OBUF[5]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[6]_inst_i_2/I2 and divide/led_OBUF[6]_inst_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[7]_inst_i_3/I3 and divide/led_OBUF[7]_inst_i_3/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_17/I4 and divide/led_OBUF[8]_inst_i_17/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_20/I3 and divide/led_OBUF[8]_inst_i_20/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_21/I1 and divide/led_OBUF[8]_inst_i_21/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_37/I3 and divide/led_OBUF[8]_inst_i_37/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_38/I3 and divide/led_OBUF[8]_inst_i_38/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_39/I3 and divide/led_OBUF[8]_inst_i_39/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_40/I5 and divide/led_OBUF[8]_inst_i_40/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#16 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_46/I3 and divide/led_OBUF[8]_inst_i_46/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#17 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_48/I3 and divide/led_OBUF[8]_inst_i_48/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#18 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_50/I3 and divide/led_OBUF[8]_inst_i_50/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#19 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between divide/led_OBUF[8]_inst_i_51/I3 and divide/led_OBUF[8]_inst_i_51/O to disable the timing loop
+Related violations: <none>
+
+

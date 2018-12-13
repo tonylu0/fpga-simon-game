@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_1.srcs/sources_1/ip/clk_wiz" \
+"../../../../project_1.srcs/sources_1/ip/clk_wiz/clk_wiz_clk_wiz.v" \
+"../../../../project_1.srcs/sources_1/ip/clk_wiz/clk_wiz.v" \
+"../../../../../Sources/FSM.v" \
+"../../../../../Sources/GARO.v" \
+"../../../../../Sources/adder.v" \
+"../../../../../Sources/clock_divider.v" \
+"../../../../../Sources/counter.v" \
+"../../../../../Sources/led_controller.v" \
+"../../../../../Sources/main.v" \
+"../../../../../Sources/register.v" \
+"../../../../../Sources/trigger3.v" \
+"../../../../../Sources/trigger3_tb.v" \
+"../../../../../Sources/top_module.v" \
+"../../../../../Sources/always_counter.v" \
+"../../../../../Sources/counter_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

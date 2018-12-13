@@ -1,14 +1,17 @@
-module main_test
+module main_test();
 
-    reg       clock = 0;
+    reg     clock;
+    
+    initial begin
+    clock = 0;
+    end
+    
     always #1 clock = !clock;
 
     reg reset = 1;
     reg[4:0] base, ending;
 
     wire in, out;
-
-    srlatch register(output, input);
 
     initial begin
         $dumpfile("main_test.vcd");

@@ -1,0 +1,8 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+		time 	clock 	data 	q
+                   0,	0, 	xx
+                   1,	1, 	xx
+                   2,	0, 	xx
+                   3,	1, 	00
+                   4,	0, 	00

@@ -1,0 +1,785 @@
+
+*** Running vivado
+    with args -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top_module.tcl -notrace
+Command: synth_design -top top_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11244 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 385.715 ; gain = 96.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [C:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.runs/synth_1/.Xil/Vivado-9364-DESKTOP-UEMN6MT/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (1#1) [C:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.runs/synth_1/.Xil/Vivado-9364-DESKTOP-UEMN6MT/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'always_counter' [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/always_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'always_counter' (3#1) [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/always_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/FSM.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DFlip8' [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/register.v:31]
+INFO: [Synth 8-6157] synthesizing module 'DFlip' [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/register.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DFlip' (4#1) [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/register.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DFlip8' (5#1) [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/register.v:31]
+WARNING: [Synth 8-689] width (8) of port connection 'clk' does not match port width (1) of module 'DFlip8' [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/FSM.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (6#1) [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/FSM.v:2]
+WARNING: [Synth 8-689] width (1) of port connection 'led_out' does not match port width (3) of module 'FSM' [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:30]
+WARNING: [Synth 8-689] width (1) of port connection 'load' does not match port width (8) of module 'FSM' [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (7#1) [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+WARNING: [Synth 8-3917] design top_module has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design top_module has port led[9] driven by constant 0
+WARNING: [Synth 8-3331] design FSM has unconnected port load[7]
+WARNING: [Synth 8-3331] design FSM has unconnected port load[6]
+WARNING: [Synth 8-3331] design FSM has unconnected port load[5]
+WARNING: [Synth 8-3331] design FSM has unconnected port load[4]
+WARNING: [Synth 8-3331] design FSM has unconnected port load[3]
+WARNING: [Synth 8-3331] design FSM has unconnected port load[2]
+WARNING: [Synth 8-3331] design FSM has unconnected port load[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 440.586 ; gain = 151.746
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 440.586 ; gain = 151.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 440.586 ; gain = 151.746
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'wiz'
+Finished Parsing XDC File [c:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'wiz'
+Parsing XDC File [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[0]_inst_i_2_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:297]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[1]_inst_i_2_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:298]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[2]_inst_i_2_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:299]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[3]_inst_i_2_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:300]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[4]_inst_i_2_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:301]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[5]_inst_i_2_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:302]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[6]_inst_i_2_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:303]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[7]_inst_i_3_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:304]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[7]_inst_i_7_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:305]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_13_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:306]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_21_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:307]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_23_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:308]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_24_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:309]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_25_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:310]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_26_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:311]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_27_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:312]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_28_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:313]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_29_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:314]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_3_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:315]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_6_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:316]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_7_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:317]
+WARNING: [Vivado 12-507] No nets matched 'divide/state/life1Pull'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:318]
+WARNING: [Vivado 12-507] No nets matched 'divide/state/life2Pull'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:319]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[0]_inst_i_2_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:320]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_15_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:322]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_16_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:323]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_17_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:324]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_30_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:325]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_31_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:326]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_32_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:327]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_33_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:328]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_34_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:329]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_35_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:330]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_36_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:331]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_37_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:332]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_4_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:333]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_5_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:334]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_9_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:335]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[7]_inst_i_2_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:337]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_11_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:338]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_12_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:339]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_18_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:340]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_19_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:341]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_20_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:342]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_38_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:343]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_39_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:344]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_40_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:345]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_41_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:346]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_42_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:347]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_43_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:348]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_8_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:349]
+WARNING: [Vivado 12-507] No nets matched 'divide/state/lifeTwoCheckFail/p_0_in'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:350]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_100_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:352]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_101_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:353]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_102_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:354]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_103_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:355]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_104_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:356]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_95_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:357]
+WARNING: [Vivado 12-507] No nets matched 'divide/led_OBUF[8]_inst_i_99_n_0'. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc:358]
+Finished Parsing XDC File [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_module_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 770.301 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 770.301 ; gain = 481.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 770.301 ; gain = 481.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for wiz. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 770.301 ; gain = 481.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 770.301 ; gain = 481.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "divide/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divide/temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design top_module has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design top_module has port led[9] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 770.301 ; gain = 481.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'wiz/clk_out' to pin 'wiz/bbstub_clk_out/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 770.301 ; gain = 481.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_147/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_155/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_153/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_112/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_121/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_143/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_61/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_55/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_48/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_42/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_34/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_28/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_13/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_123/Z'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_147/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_88/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_0/i_104/O'
+INFO: [Synth 8-620] skipping inversion-propagation across instance 'i_0/i_105' with timing assertions on output pin 'O'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 786.258 ; gain = 497.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_98/O (LUT2)
+     1: i_98/I1 (LUT2)
+     2: i_121/O (LUT3)
+     3: i_121/I2 (LUT3)
+     4: i_98/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_98"
+Found timing loop:
+     0: i_108/O (LUT3)
+     1: i_108/I2 (LUT3)
+     2: i_77/O (LUT1)
+     3: i_77/I0 (LUT1)
+     4: i_97/O (LUT2)
+     5: i_97/I1 (LUT2)
+     6: i_13/O (LUT5)
+     7: i_13/I3 (LUT5)
+     8: i_108/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I2 -to O i_108"
+Found timing loop:
+     0: i_97/O (LUT2)
+     1: i_97/I1 (LUT2)
+     2: i_13/O (LUT5)
+     3: i_13/I3 (LUT5)
+     4: i_108/O (LUT3)
+     5: i_108/I1 (LUT3)
+     6: i_108/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_97"
+Found timing loop:
+     0: i_100/O (LUT2)
+     1: i_100/I1 (LUT2)
+     2: i_122/O (LUT3)
+     3: i_122/I2 (LUT3)
+     4: i_100/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_100"
+Found timing loop:
+     0: i_33/O (LUT2)
+     1: i_33/I1 (LUT2)
+     2: i_98/O (LUT2)
+     3: i_98/I0 (LUT2)
+     4: i_2/O (LUT6)
+     5: i_2/I5 (LUT6)
+     6: i_73/O (LUT3)
+     7: i_73/I1 (LUT3)
+     8: i_108/O (LUT3)
+     9: i_108/I1 (LUT3)
+    10: i_108/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_33"
+Found timing loop:
+     0: i_110/O (LUT2)
+     1: i_110/I1 (LUT2)
+     2: i_1/O (LUT3)
+     3: i_1/I0 (LUT3)
+     4: i_33/O (LUT2)
+     5: i_33/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_110"
+Found timing loop:
+     0: i_99/O (LUT2)
+     1: i_99/I0 (LUT2)
+     2: i_11/O (LUT6)
+     3: i_11/I5 (LUT6)
+     4: i_110/O (LUT2)
+     5: i_110/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_99"
+Found timing loop:
+     0: i_99/O (LUT2)
+     1: i_99/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Found timing loop:
+     0: i_100/O (LUT2)
+     1: i_100/I0 (LUT2)
+     2: i_8/O (LUT6)
+     3: i_8/I5 (LUT6)
+     4: i_10/O (LUT6)
+     5: i_10/I1 (LUT6)
+     6: i_31/O (LUT6)
+     7: i_31/I5 (LUT6)
+     8: i_100/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_100"
+Found timing loop:
+     0: i_88/O (LUT2)
+     1: i_88/I1 (LUT2)
+     2: i_38/O (LUT5)
+     3: i_38/I4 (LUT5)
+     4: i_88/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_88"
+Found timing loop:
+     0: i_98/O (LUT2)
+     1: i_98/I0 (LUT2)
+     2: i_2/O (LUT6)
+     3: i_2/I5 (LUT6)
+     4: i_73/O (LUT3)
+     5: i_73/I1 (LUT3)
+     6: i_108/O (LUT3)
+     7: i_108/I1 (LUT3)
+     8: i_108/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_98"
+Found timing loop:
+     0: i_96/O (LUT2)
+     1: i_96/I1 (LUT2)
+     2: i_107/O (LUT3)
+     3: i_107/I2 (LUT3)
+     4: i_18/O (LUT6)
+     5: i_18/I5 (LUT6)
+     6: i_106/O (LUT2)
+     7: i_106/I1 (LUT2)
+     8: i_6/O (LUT4)
+     9: i_6/I1 (LUT4)
+    10: i_95/O (LUT2)
+    11: i_95/I1 (LUT2)
+    12: i_19/O (LUT3)
+    13: i_19/I2 (LUT3)
+    14: i_105/O (LUT2)
+    15: i_105/I1 (LUT2)
+    16: i_7/O (LUT5)
+    17: i_7/I4 (LUT5)
+    18: i_137/O (LUT2)
+    19: i_137/I1 (LUT2)
+    20: i_100/O (LUT2)
+    21: i_100/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_96"
+Found timing loop:
+     0: i_100/O (LUT2)
+     1: i_100/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Found timing loop:
+     0: i_88/O (LUT2)
+     1: i_88/I0 (LUT2)
+     2: i_39/O (LUT4)
+     3: i_39/I2 (LUT4)
+     4: i_88/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_88"
+Found timing loop:
+     0: i_117/O (LUT2)
+     1: i_117/I0 (LUT2)
+     2: i_41/O (LUT3)
+     3: i_41/I0 (LUT3)
+     4: i_117/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_117"
+Found timing loop:
+     0: i_120/O (LUT2)
+     1: i_120/I0 (LUT2)
+     2: i_27/O (LUT5)
+     3: i_27/I3 (LUT5)
+     4: i_120/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_120"
+Found timing loop:
+     0: i_118/O (LUT2)
+     1: i_118/I0 (LUT2)
+     2: i_40/O (LUT3)
+     3: i_40/I0 (LUT3)
+     4: i_118/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_118"
+Found timing loop:
+     0: i_89/O (LUT2)
+     1: i_89/I1 (LUT2)
+     2: i_26/O (LUT5)
+     3: i_26/I4 (LUT5)
+     4: i_89/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_89"
+Found timing loop:
+     0: i_89/O (LUT2)
+     1: i_89/I0 (LUT2)
+     2: i_67/O (LUT4)
+     3: i_67/I2 (LUT4)
+     4: i_89/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_89"
+Found timing loop:
+     0: i_111/O (LUT2)
+     1: i_111/I0 (LUT2)
+     2: i_53/O (LUT3)
+     3: i_53/I0 (LUT3)
+     4: i_111/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_111"
+Found timing loop:
+     0: i_90/O (LUT2)
+     1: i_90/I1 (LUT2)
+     2: i_25/O (LUT5)
+     3: i_25/I4 (LUT5)
+     4: i_90/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_90"
+Found timing loop:
+     0: i_90/O (LUT2)
+     1: i_90/I0 (LUT2)
+     2: i_68/O (LUT4)
+     3: i_68/I2 (LUT4)
+     4: i_90/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_90"
+Found timing loop:
+     0: i_112/O (LUT2)
+     1: i_112/I0 (LUT2)
+     2: i_51/O (LUT3)
+     3: i_51/I0 (LUT3)
+     4: i_112/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_112"
+Found timing loop:
+     0: i_91/O (LUT2)
+     1: i_91/I1 (LUT2)
+     2: i_24/O (LUT5)
+     3: i_24/I4 (LUT5)
+     4: i_91/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_91"
+Found timing loop:
+     0: i_91/O (LUT2)
+     1: i_91/I0 (LUT2)
+     2: i_69/O (LUT4)
+     3: i_69/I2 (LUT4)
+     4: i_91/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_91"
+Found timing loop:
+     0: i_113/O (LUT2)
+     1: i_113/I0 (LUT2)
+     2: i_49/O (LUT3)
+     3: i_49/I0 (LUT3)
+     4: i_113/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_113"
+Found timing loop:
+     0: i_94/O (LUT2)
+     1: i_94/I1 (LUT2)
+     2: i_21/O (LUT5)
+     3: i_21/I4 (LUT5)
+     4: i_94/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_94"
+Found timing loop:
+     0: i_94/O (LUT2)
+     1: i_94/I0 (LUT2)
+     2: i_72/O (LUT4)
+     3: i_72/I2 (LUT4)
+     4: i_94/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_94"
+Found timing loop:
+     0: i_116/O (LUT2)
+     1: i_116/I0 (LUT2)
+     2: i_43/O (LUT3)
+     3: i_43/I0 (LUT3)
+     4: i_116/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_116"
+Found timing loop:
+     0: i_93/O (LUT2)
+     1: i_93/I1 (LUT2)
+     2: i_22/O (LUT5)
+     3: i_22/I4 (LUT5)
+     4: i_93/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_93"
+Found timing loop:
+     0: i_93/O (LUT2)
+     1: i_93/I0 (LUT2)
+     2: i_71/O (LUT4)
+     3: i_71/I2 (LUT4)
+     4: i_93/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_93"
+Found timing loop:
+     0: i_115/O (LUT2)
+     1: i_115/I0 (LUT2)
+     2: i_45/O (LUT3)
+     3: i_45/I0 (LUT3)
+     4: i_115/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_115"
+Found timing loop:
+     0: i_92/O (LUT2)
+     1: i_92/I1 (LUT2)
+     2: i_23/O (LUT5)
+     3: i_23/I4 (LUT5)
+     4: i_92/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_92"
+Found timing loop:
+     0: i_92/O (LUT2)
+     1: i_92/I0 (LUT2)
+     2: i_70/O (LUT4)
+     3: i_70/I2 (LUT4)
+     4: i_92/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_92"
+Found timing loop:
+     0: i_114/O (LUT2)
+     1: i_114/I0 (LUT2)
+     2: i_47/O (LUT3)
+     3: i_47/I0 (LUT3)
+     4: i_114/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_114"
+Found timing loop:
+     0: i_100/O (LUT2)
+     1: i_100/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Found timing loop:
+     0: i_95/O (LUT2)
+     1: i_95/I1 (LUT2)
+     2: i_19/O (LUT3)
+     3: i_19/I2 (LUT3)
+     4: i_105/O (LUT2)
+     5: i_105/I1 (LUT2)
+     6: i_7/O (LUT5)
+     7: i_7/I0 (LUT5)
+     8: i_95/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I1 -to O i_95"
+Found timing loop:
+     0: i_95/O (LUT2)
+     1: i_95/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Found timing loop:
+     0: i_95/O (LUT2)
+     1: i_95/I0 (LUT2)
+     2: i_32/O (LUT4)
+     3: i_32/I0 (LUT4)
+     4: i_95/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_95"
+Found timing loop:
+     0: i_106/O (LUT2)
+     1: i_106/I0 (LUT2)
+     2: i_5/O (LUT3)
+     3: i_5/I0 (LUT3)
+     4: i_106/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_106"
+Found timing loop:
+     0: i_96/O (LUT2)
+     1: i_96/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Found timing loop:
+     0: i_109/O (LUT2)
+     1: i_109/I0 (LUT2)
+     2: i_3/O (LUT3)
+     3: i_3/I0 (LUT3)
+     4: i_109/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_109"
+Found timing loop:
+     0: i_98/O (LUT2)
+     1: i_98/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Found timing loop:
+     0: i_110/O (LUT2)
+     1: i_110/I0 (LUT2)
+     2: i_0/O (LUT3)
+     3: i_0/I0 (LUT3)
+     4: i_110/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I0 -to O i_110"
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_108/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_101/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_107/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_104/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_102/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_103/O'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 786.258 ; gain = 497.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 786.258 ; gain = 497.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 786.258 ; gain = 497.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Found timing loop:
+     0: \led_OBUF[8]_inst_i_10 /O (LUT6)
+     1: \led_OBUF[8]_inst_i_10 /I3 (LUT6)
+     2: \led_OBUF[8]_inst_i_11 /O (LUT4)
+     3: \led_OBUF[8]_inst_i_11 /I3 (LUT4)
+     4: \led_OBUF[8]_inst_i_11 /O (LUT4)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v:2]
+Inferred a: "set_disable_timing -from I3 -to O \led_OBUF[8]_inst_i_10 "
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 786.258 ; gain = 497.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 786.258 ; gain = 497.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 786.258 ; gain = 497.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 786.258 ; gain = 497.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |CARRY4  |    10|
+|3     |LUT1    |     2|
+|4     |LUT2    |    11|
+|5     |LUT3    |     3|
+|6     |LUT4    |    32|
+|7     |LUT5    |    18|
+|8     |LUT6    |    15|
+|9     |FDRE    |    41|
+|10    |IBUF    |    12|
+|11    |OBUF    |    11|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |   157|
+|2     |  count  |always_counter |    11|
+|3     |  divide |clock_divider  |   120|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 786.258 ; gain = 497.418
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 45 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 786.258 ; gain = 167.703
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 786.258 ; gain = 497.418
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 97 Warnings, 45 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 787.891 ; gain = 510.523
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.runs/synth_1/top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 787.891 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 13 15:53:17 2018...

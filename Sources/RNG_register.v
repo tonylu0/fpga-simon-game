@@ -4,12 +4,13 @@ module RNG_register(random_num, RNG_in, start_game, reset);
     input   [31:0] RNG_in;
     input   start_game, reset;
 
-    wire    r = reset | start_game;
-    wire    [7:0] in;
+    reg     r;
+    wire    start_game;
+    reg    [7:0] in;
 
-    always @posedge(start_game)
+    always @(posedge start_game)
         r <= 1;
-    always @negedge(start_game)
+    always @(negedge start_game)
         r <= 0;
         in <= RNG_in;
 

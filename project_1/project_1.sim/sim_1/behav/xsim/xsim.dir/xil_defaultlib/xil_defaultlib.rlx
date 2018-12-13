@@ -1,0 +1,20 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/FSM.v,1544715598,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/GARO.v,,FSM,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/GARO.v,1544692628,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/adder.v,,random_num_gen,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/adder.v,1544699549,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/clock_divider.v,,ha,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+,,,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/counter_tb.v,,always_counter,,,,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/clock_divider.v,1544693561,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/counter.v,,clock_divider,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/counter.v,1544701416,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/led_controller.v,,counter2;counter20,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/counter_tb.v,1544703013,verilog,,,,counter_tb,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/led_controller.v,1544648354,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/main.v,,led_controller,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/main.v,1544686073,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/register.v,,main_test,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/register.v,1544699496,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/trigger3.v,,DFlip;DFlip8,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v,1544697275,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/always_counter.v,,top_module,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/trigger3.v,1544654057,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/trigger3_tb.v,,trigger3,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/trigger3_tb.v,1544658783,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/top_module.v,,trigger3_tb,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.srcs/sources_1/ip/clk_wiz/clk_wiz.v,1544686293,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/Sources/FSM.v,,clk_wiz,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
+C:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.srcs/sources_1/ip/clk_wiz/clk_wiz_clk_wiz.v,1544686293,verilog,,C:/Users/Proxycannon/Desktop/fpga-simon-game/project_1/project_1.srcs/sources_1/ip/clk_wiz/clk_wiz.v,,clk_wiz_clk_wiz,,,../../../../project_1.srcs/sources_1/ip/clk_wiz,,,,,
